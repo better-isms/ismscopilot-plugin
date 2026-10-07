@@ -1,7 +1,7 @@
 {
   "name": "ismscopilot",
   "displayName": "ISMS Copilot",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
   "author": {
     "name": "Better ISMS",
@@ -62,13 +62,13 @@
             {
               "description": "Ask the compliance specialist a framework question",
               "prompt": "Ask ISMS Copilot which ISO 27001:2022 Annex A controls cover supplier security.",
-              "tools_triggered": "create_conversation (plus get_reply only if the reply is still generating)",
+              "tools_triggered": "create_conversation",
               "expected_behavior": "Starts one conversation and returns the specialist's answer naming A.5.19 through A.5.23 in plain language, without pasting the standard's text. If the reply is still generating, get_reply is called until the answer is complete."
             },
             {
               "description": "Follow up in the same conversation",
               "prompt": "Ask ISMS Copilot to turn that into a five-item supplier review checklist.",
-              "tools_triggered": "send_message (plus get_reply only if the reply is still generating)",
+              "tools_triggered": "send_message",
               "expected_behavior": "Continues the same conversation instead of creating a new one and returns a five-item supplier review checklist."
             },
             {
@@ -106,7 +106,7 @@
         "commerce_description": "This plugin does not sell products or process payments. The connected tool set has no checkout, credit or API key tools."
       },
       "publication": {
-        "release_notes": "Initial directory release (0.1.3). Connects the ISMS Copilot account MCP server over OAuth 2.1: compliance specialist conversations, workspaces, documents, memories and company context."
+        "release_notes": "Initial directory release (0.1.4). Connects the ISMS Copilot account MCP server over OAuth 2.1: compliance specialist conversations, workspaces, documents, memories and company context."
       }
     }
   }
