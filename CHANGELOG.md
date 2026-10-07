@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.3
+
+ChatGPT test run on the reviewer account (2026-10-07):
+
+- Review case P3 prompt names the app ("Ask ISMS Copilot to turn that
+  into ..."). The bare follow-up was answered by ChatGPT itself without a
+  tool call; the named prompt continues the same specialist conversation
+  (send_message, verified: one thread, four messages).
+- Negative case N2 expected behavior matches what ChatGPT does: declines
+  without a tool call and says key creation is not available through
+  this connection.
+
 ## 0.1.2
 
 Pre-submission audit against the OpenAI plugin guidelines (2026-10-07):
