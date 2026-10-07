@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.4
+
+- Review cases P2 and P3: tools_triggered holds plain tool names
+  (create_conversation, send_message). The conditional get_reply note
+  stays in expected_behavior. Matches the documented format (tool names,
+  comma separated).
+
 ## 0.1.3
 
 ChatGPT test run on the reviewer account (2026-10-07):
