@@ -1,0 +1,52 @@
+---
+name: get-started
+description: >
+  Get started with the ISMS Copilot account connection: what the GRC
+  specialist covers, how the OAuth sign-in works, what to delegate to it,
+  and what stays local. Use when the user asks to connect ISMS Copilot,
+  asks what the connection can do, or wants to start delegating compliance
+  work.
+---
+
+# ISMS Copilot: getting started
+
+ISMS Copilot is a GRC specialist for ISO 27001, ISO 27701, ISO 42001,
+SOC 2, GDPR, NIS 2, DORA, EU AI Act, HIPAA and PCI DSS. This connection
+talks to the user's ISMS Copilot account over OAuth: the user signs in
+with their ISMS Copilot account and approves the consent screen, and the
+specialist works inside that account.
+
+## What to delegate
+
+- Framework interpretation: what a control or article requires, in plain
+  language.
+- Policy drafting and control mapping.
+- Gap analysis, SoA justifications, risk registers and audit prep.
+- Anything where the user would otherwise paste framework text first:
+  do not paste it, the specialist brings the framework.
+
+One conversation per deliverable: start with the request, then follow up
+in the same conversation so context carries over.
+
+## Account data
+
+The connected tools can read the account's workspaces and documents,
+memories and company context, and can write memories, company context and
+workspaces. Before drafting anything company-specific, read the stored
+company context with get_company_context instead of inventing company
+facts. Save durable preferences as memories with create_memory.
+
+## What stays local
+
+Code, files, git and credentials stay on the user's machine. Never ask
+the user to paste API keys, passwords or secrets into the chat, and never
+try to: this connection has no key or credit tools. If the user asks to
+create an API key, buy credits or check a balance, say it is not part of
+this connection and point them to ISMS Copilot settings at
+https://ismscopilot.com.
+
+## Plans
+
+Some features depend on the user's plan. If a feature is unavailable, say
+so plainly and link the informational pricing page
+https://ismscopilot.com/pricing. Do not quote prices from memory.
