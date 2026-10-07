@@ -23,14 +23,14 @@ specialist works inside that account.
 - Policy drafting and control mapping.
 - Gap analysis, SoA justifications, risk registers and audit prep.
 - Anything where the user would otherwise paste framework text first:
-  do not paste it, the specialist brings the framework.
+  do not paste it, the specialist already knows the frameworks.
 
 One conversation per deliverable: start with the request, then follow up
 in the same conversation so context carries over.
 
 ## Account data
 
-The connected tools can read the account's workspaces and documents,
+The connected tools can list the account's workspaces and document metadata,
 memories and company context, and can write memories, company context and
 workspaces. Before drafting anything company-specific, read the stored
 company context with get_company_context instead of inventing company
