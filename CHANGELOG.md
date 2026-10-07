@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5
+
+- Review case P4 prompt names both steps ("List my ISMS Copilot
+  workspaces, then list the documents in My First Workspace."). In one
+  of two ChatGPT runs the earlier wording led to a list_workspaces call
+  only and a "no documents" answer. The matching starter prompt now names
+  both steps too ("..., then list the documents in the first one.").
+
 ## 0.1.4
 
 - Review cases P2 and P3: tools_triggered holds plain tool names

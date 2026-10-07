@@ -1,7 +1,7 @@
 {
   "name": "ismscopilot",
   "displayName": "ISMS Copilot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
   "author": {
     "name": "Better ISMS",
@@ -41,7 +41,7 @@
         "termsOfServiceURL": "https://trust.ismscopilot.com/en/terms",
         "defaultPrompt": [
           "Ask ISMS Copilot which ISO 27001 controls cover supplier security.",
-          "List my ISMS Copilot workspaces and the documents in the first one.",
+          "List my ISMS Copilot workspaces, then list the documents in the first one.",
           "Remember in ISMS Copilot that our certification audit is in November."
         ],
         "brandColor": "#5046e4",
@@ -73,7 +73,7 @@
             },
             {
               "description": "List workspaces and their documents",
-              "prompt": "List my ISMS Copilot workspaces and the documents in the first one.",
+              "prompt": "List my ISMS Copilot workspaces, then list the documents in My First Workspace.",
               "tools_triggered": "list_workspaces, list_documents",
               "expected_behavior": "Lists the connected account's workspaces, then that workspace's documents by name. Returns only data belonging to the connected account."
             },
@@ -106,7 +106,7 @@
         "commerce_description": "This plugin does not sell products or process payments. The connected tool set has no checkout, credit or API key tools."
       },
       "publication": {
-        "release_notes": "Initial directory release (0.1.4). Connects the ISMS Copilot account MCP server over OAuth 2.1: compliance specialist conversations, workspaces, documents, memories and company context."
+        "release_notes": "Initial directory release (0.1.5). Connects the ISMS Copilot account MCP server over OAuth 2.1: compliance specialist conversations, workspaces, documents, memories and company context."
       }
     }
   }
