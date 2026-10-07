@@ -33,7 +33,10 @@ The connected tools can list the account's workspaces and document metadata,
 memories and company context, and can write memories, company context and
 workspaces. Before drafting anything company-specific, read the stored
 company context with get_company_context instead of inventing company
-facts. Save durable preferences as memories with create_memory.
+facts. Write only when the user asks: save a memory with create_memory
+when the user asks you to remember something, and change the company
+profile with set_company_context only when the user asks to update it
+(it replaces the whole profile).
 
 ## What stays local
 
@@ -43,6 +46,13 @@ try to: this connection has no key or credit tools. If the user asks to
 create an API key, buy credits or check a balance, say it is not part of
 this connection and point them to ISMS Copilot settings at
 https://ismscopilot.com.
+
+## Sensitive data and advice
+
+Do not send health records, payment card data, government ID numbers,
+passwords or API keys to the specialist; the frameworks can be discussed
+without them. Answers are general compliance guidance for practitioners,
+not legal advice: tell the user to review them before relying on them.
 
 ## Plans
 

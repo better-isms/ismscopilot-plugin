@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.1.2
+
+Pre-submission audit against the OpenAI plugin guidelines (2026-10-07):
+
+- Subtitle "Compliance and GRC specialist" (states the purpose for the
+  Security category; drops "your agent", which could read as a
+  reference to another AI assistant).
+- Long description: restricted-data line (no health records, card data
+  or government IDs), not-legal-advice line, credit-purchase wording
+  removed from the listing (commerce stays declared false).
+- Support URL points to the public contact-support page.
+- composerIcon added (required in the Codex-format manifest the portal
+  derives).
+- Review case P1 now reads the company profile (get_company_context)
+  instead of the plan, so no plan, upgrade link or account identifier
+  appears in review output. P2 and P3 name get_reply as conditional.
+- Onboarding skill: writes only on user request; sensitive data and
+  not-legal-advice guidance.
+
 ## 0.1.1
 
 Category corrected to Security (the ChatGPT plugins directory category list
