@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ismscopilot",
   "version": "0.1.0",
-  "description": "Connect an ISMS Copilot account so GRC work can be delegated to its compliance specialist: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
+  "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
   "author": {
     "name": "Better ISMS",
     "email": "support@ismscopilot.com",

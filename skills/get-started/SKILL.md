@@ -1,11 +1,10 @@
 ---
 name: get-started
 description: >
-  Get started with the ISMS Copilot account connection: what the GRC
-  specialist covers, how the OAuth sign-in works, what to delegate to it,
-  and what stays local. Use when the user asks to connect ISMS Copilot,
-  asks what the connection can do, or wants to start delegating compliance
-  work.
+  Get started with the account connection: what the GRC specialist
+  covers, how the OAuth sign-in works, what to delegate to it, and what
+  stays local. Use when the user asks to connect the account, asks what
+  the connection can do, or wants to start delegating compliance work.
 ---
 
 # ISMS Copilot: getting started
