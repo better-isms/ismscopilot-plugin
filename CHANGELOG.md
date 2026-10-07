@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.6
+
+- Review: demo_recording_url added (video walkthrough of the review cases in
+  ChatGPT, hosted on www.ismscopilot.com).
+
 ## 0.1.5
 
 - Review case P4 prompt names both steps ("List my ISMS Copilot
