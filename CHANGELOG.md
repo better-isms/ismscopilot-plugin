@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1
+
+Category corrected to Security (the ChatGPT plugins directory category list
+confirmed from the live directory: Security is the category for information
+security compliance work; Productivity could not be confirmed by the portal
+check). Version bump to 0.1.1. No other listing text change.
+
 ## 0.1.0
 
 Initial plugin package for the ChatGPT and Codex plugins directory,

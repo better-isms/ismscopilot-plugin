@@ -1,7 +1,7 @@
 {
   "name": "ismscopilot",
   "displayName": "ISMS Copilot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
   "author": {
     "name": "Better ISMS",
@@ -28,7 +28,7 @@
         "shortDescription": "GRC specialist for your agent",
         "longDescription": "Connect your account to delegate GRC work: ISO 27001/27701/42001, SOC 2, GDPR, NIS 2, DORA, EU AI Act, HIPAA and PCI DSS interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep for compliance and audit teams. Ask the specialist a framework question and continue one conversation per deliverable; company context, memories and workspaces stay with your account. The specialist already knows the frameworks, so you do not need to paste source text. The connected tools do not accept local code, local files, passwords or API keys; they cover account and workspace reads, document listings, memories, company context and specialist conversations. API keys and credit purchases are not part of the connection. Requires an account.",
         "developerName": "Better ISMS",
-        "category": "Productivity",
+        "category": "Security",
         "capabilities": [
           "Compliance Q&A",
           "Policy drafting",
