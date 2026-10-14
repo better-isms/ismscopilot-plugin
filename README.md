@@ -23,6 +23,8 @@ gemini extensions install https://github.com/better-isms/ismscopilot-plugin
 ```
 
 Restart Gemini CLI, then run `/mcp auth ismscopilot` to sign in.
+Gemini CLI extensions need a Gemini CLI install; Google moved unpaid and Google One
+users to Antigravity CLI on 2026-06-18.
 `gemini-extension.json` registers the `ismscopilot` MCP server (`httpUrl`,
 Streamable HTTP) and loads `GEMINI.md` as context.
 
@@ -41,11 +43,11 @@ and the get started skill.
 ### What the connection sends
 
 The MCP server is hosted by Better ISMS at
-`https://account.ismscopilot.com/v1/account/mcp`. Only what the agent sends through
-the ISMS Copilot tools reaches it (questions for the specialist,
-memories, company context, workspace and document requests). Local code, files,
-git and shell output are not sent by this package; it runs no local scripts or
-hooks.
+`https://account.ismscopilot.com/v1/account/mcp`. The package reads no local files
+and runs no scripts or hooks. Whatever the agent puts into an ISMS Copilot tool
+call (questions for the specialist, memories, company context, workspace and
+document requests, including any excerpt it chooses to quote) is sent to the
+server.
 
 ## Structure
 

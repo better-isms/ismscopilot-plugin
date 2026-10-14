@@ -11,7 +11,7 @@ Act, Cyber Resilience Act, NIST SP 800-171/CMMC, HIPAA or PCI DSS work:
 interpretation, policy drafting, control mapping, gap analysis, Statement of
 Applicability justifications, risk registers and audit preparation.
 
-Keep code, git, local files and shell work local; they are not sent to the
+Keep code, git, local files and shell work local. Do not send them to the
 specialist.
 
 ## How to use it
