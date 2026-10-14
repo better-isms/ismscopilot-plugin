@@ -1,5 +1,17 @@
 # Changelog
 
+## Gemini CLI 0.1.0 and Claude Code install (2026-10-14)
+
+- New files only; the OpenAI package files (plugin.json,
+  .claude-plugin/plugin.json, mcp.json, skills, assets) are unchanged and
+  the package stays at 0.1.6.
+- gemini-extension.json (extension 0.1.0, MCP server `ismscopilot` by
+  httpUrl) and GEMINI.md context, so the repo installs with
+  `gemini extensions install` and the Gemini CLI gallery can index it.
+- .mcp.json (type http) and .claude-plugin/marketplace.json, so the repo
+  installs as a Claude Code plugin with `claude plugin marketplace add`.
+- README: Install section for both.
+
 ## 0.1.6
 
 - Review: demo_recording_url added (video walkthrough of the review cases in
