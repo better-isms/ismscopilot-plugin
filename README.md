@@ -57,6 +57,7 @@ Setup guide: https://docs.ismscopilot.com/docs/agents/connect-any-mcp-client
 ## Package layout (maintainers)
 
 - `.claude-plugin/plugin.json`: Claude Code manifest (it also carries the `extensions.com.openai` block, which Claude Code ignores).
+- `.cursor-plugin/plugin.json`: Cursor manifest (cursor.directory reads it before `.claude-plugin`).
 - `.claude-plugin/marketplace.json`: one-plugin Claude Code marketplace, so the repo installs with `claude plugin marketplace add`.
 - `.mcp.json`: the MCP server entry for Claude Code (type `http`).
 - `gemini-extension.json` and `GEMINI.md`: Gemini CLI extension manifest and its context file.

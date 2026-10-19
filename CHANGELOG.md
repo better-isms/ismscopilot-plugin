@@ -10,6 +10,8 @@
   Claude directory listing, homepage carries ref=claude-code-plugins. Its
   extensions.com.openai block is unchanged. The ChatGPT and Codex package
   (root plugin.json, mcp.json) stays at 0.1.6.
+- .cursor-plugin/plugin.json (new): Cursor manifest for cursor.directory,
+  description ends "from Cursor.", homepage carries ref=cursor-directory.
 
 ## Gemini CLI 0.1.0 and Claude Code install (2026-10-14)
 
