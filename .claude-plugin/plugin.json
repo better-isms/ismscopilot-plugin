@@ -1,14 +1,14 @@
 {
   "name": "ismscopilot",
   "displayName": "ISMS Copilot",
-  "version": "0.1.6",
-  "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
+  "version": "0.1.7",
+  "description": "The compliance specialist your AI calls. Ask ISMS Copilot framework questions and work with your compliance workspaces, documents, memories, company profile and client companies from Claude.",
   "author": {
     "name": "Better ISMS",
     "email": "support@ismscopilot.com",
     "url": "https://ismscopilot.com"
   },
-  "homepage": "https://ismscopilot.com",
+  "homepage": "https://www.ismscopilot.com/mcp?ref=claude-code-plugins",
   "repository": "https://github.com/better-isms/ismscopilot-plugin",
   "license": "MIT",
   "keywords": [
