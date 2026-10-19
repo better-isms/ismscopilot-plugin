@@ -1,6 +1,5 @@
 {
   "name": "ismscopilot",
-  "displayName": "ISMS Copilot",
   "version": "0.1.7",
   "description": "The compliance specialist your AI calls. Ask ISMS Copilot framework questions and work with your compliance workspaces, documents, memories, company profile and client companies from Cursor.",
   "author": {
@@ -21,5 +20,6 @@
     "risk-register",
     "audit-prep"
   ],
-  "logo": "assets/logo.png"
+  "logo": "assets/logo.png",
+  "mcpServers": "./.mcp.json"
 }
