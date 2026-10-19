@@ -1,32 +1,27 @@
-# ismscopilot-plugin
+# ISMS Copilot
 
-ISMS Copilot plugin package for the ChatGPT and Codex plugins directory ("With MCP"
-submission type), Claude Code and Gemini CLI. Maintained by [Better ISMS](https://betterisms.co).
+The compliance specialist your AI calls.
 
-The package connects the [ISMS Copilot](https://ismscopilot.com) account MCP server
-(`https://account.ismscopilot.com/v1/account/mcp`, Streamable HTTP, OAuth 2.1) so
-compliance work can be delegated to the ISMS Copilot GRC specialist: framework
-interpretation, policy drafting, control mapping, gap analysis, risk registers and
-audit prep across ISO 27001/27701/42001, SOC 2, GDPR, NIS 2, DORA, EU AI Act, HIPAA
-and PCI DSS.
+ISMS Copilot is a governance, risk and compliance (GRC) assistant. Connect your ISMS Copilot account and Claude can hand it the compliance part of your work: framework interpretation, policy drafting, control mapping, gap analysis, Statement of Applicability justifications, risk register entries and audit preparation for ISO 27001, ISO 27701, ISO 42001, SOC 2, GDPR, NIS 2, DORA, the EU AI Act, the Cyber Resilience Act, NIST SP 800-171 and CMMC, HIPAA and PCI DSS.
+
+What the connector does:
+
+- Starts and continues conversations with the ISMS Copilot specialist, one conversation per deliverable, saved to your ISMS Copilot account.
+- Reads your plan name, workspaces, document names and processing status, memories, company profile and client companies, so answers fit your organization. When you ask the specialist in a workspace, it may use that workspace's processed documents as context for its answer.
+- Creates workspaces, adds or updates memories and updates your company profile when you ask. If you advise several organizations, it can also create, update, link and delete client companies (one profile per client); deleting a company unlinks its workspaces and never deletes workspace data.
+
+What it does not do: it does not read Claude's chat history or files you upload to Claude, no tool returns a stored file as such, and it has no payment, checkout or API key tools.
+
+Sign in with your ISMS Copilot account; new users can create one on the sign-in page. ISMS Copilot uses AI. Answers are general compliance information, not legal advice: have a qualified professional review legal or regulatory interpretations before you rely on or share them. ISMS Copilot is made by Better ISMS and is not affiliated with Microsoft or GitHub.
+
+## What this plugin contains
+
+- One remote MCP server, `ismscopilot`, at `https://account.ismscopilot.com/v1/account/mcp` (Streamable HTTP). The first time a tool runs, your client opens the ISMS Copilot sign-in and consent page (OAuth 2.1). The plugin stores no credentials and asks for no API key.
+- One skill, `get-started`, that tells the assistant what to hand to the specialist and what stays on your machine.
+
+It has no hooks, scripts, commands or local code. It sends data only to the ISMS Copilot server above: whatever the assistant puts into a tool call (questions for the specialist, memories, company context, workspace and document requests, including any excerpt it chooses to quote).
 
 ## Install
-
-The connection signs in to your ISMS Copilot account with OAuth 2.1 in your
-browser. No API key or secret is stored in this repository or asked for.
-More on the server: https://www.ismscopilot.com/mcp
-
-### Gemini CLI
-
-```bash
-gemini extensions install https://github.com/better-isms/ismscopilot-plugin
-```
-
-Restart Gemini CLI, then run `/mcp auth ismscopilot` to sign in.
-Gemini CLI extensions need a Gemini CLI install; Google moved unpaid and Google One
-users to Antigravity CLI on 2026-06-18.
-`gemini-extension.json` registers the `ismscopilot` MCP server (`httpUrl`,
-Streamable HTTP) and loads `GEMINI.md` as context.
 
 ### Claude Code
 
@@ -35,40 +30,41 @@ claude plugin marketplace add better-isms/ismscopilot-plugin
 claude plugin install ismscopilot@ismscopilot
 ```
 
-Or from inside a session: `/plugin marketplace add better-isms/ismscopilot-plugin`,
-then `/plugin install ismscopilot@ismscopilot`. Run `/mcp`, pick `ismscopilot`
-and sign in. The plugin bundles the remote MCP server (`.mcp.json`, type `http`)
-and the get started skill.
+Then run `/mcp`, pick `ismscopilot` and sign in. Or add the server on its own:
 
-### What the connection sends
+```bash
+claude mcp add --transport http ismscopilot https://account.ismscopilot.com/v1/account/mcp
+```
 
-The MCP server is hosted by Better ISMS at
-`https://account.ismscopilot.com/v1/account/mcp`. The package reads no local files
-and runs no scripts or hooks. Whatever the agent puts into an ISMS Copilot tool
-call (questions for the specialist, memories, company context, workspace and
-document requests, including any excerpt it chooses to quote) is sent to the
-server.
+### Gemini CLI
 
-## Structure
+```bash
+gemini extensions install https://github.com/better-isms/ismscopilot-plugin
+```
 
-- `plugin.json`: root Agent Plugins manifest, carries `extensions.com.openai`
-  (listing text, review information, publication notes).
-- `.claude-plugin/plugin.json`: Claude-compatible manifest, same OpenAI extension.
-- `mcp.json`: the account MCP server entry (Agent Plugins format).
-- `.mcp.json`: the same server for Claude Code (type `http`).
-- `.claude-plugin/marketplace.json`: one-plugin Claude Code marketplace, so the
-  repo installs with `claude plugin marketplace add`.
-- `gemini-extension.json` and `GEMINI.md`: Gemini CLI extension manifest and its
-  context file.
+Restart Gemini CLI, then run `/mcp auth ismscopilot` to sign in.
+
+### Other MCP clients
+
+Setup guide: https://docs.ismscopilot.com/docs/agents/connect-any-mcp-client
+
+## Links
+
+- Website: https://www.ismscopilot.com/mcp?ref=claude-code-plugins
+- Privacy policy: https://trust.ismscopilot.com/en/privacy-policy
+- Support: support@ismscopilot.com
+
+## Package layout (maintainers)
+
+- `.claude-plugin/plugin.json`: Claude Code manifest (it also carries the `extensions.com.openai` block, which Claude Code ignores).
+- `.claude-plugin/marketplace.json`: one-plugin Claude Code marketplace, so the repo installs with `claude plugin marketplace add`.
+- `.mcp.json`: the MCP server entry for Claude Code (type `http`).
+- `gemini-extension.json` and `GEMINI.md`: Gemini CLI extension manifest and its context file.
+- `plugin.json` and `mcp.json`: Agent Plugins manifest and server entry for the ChatGPT and Codex plugins directory.
 - `skills/get-started/SKILL.md`: onboarding skill.
 - `assets/logo.png`: listing icon.
 
-## Releases
-
-Plugin repos in this org use merge-commit PRs to `main`. The directory ZIP is built
-from merged `main` with `git archive`. Submission flow:
-[`docs/runbooks/openai-plugins-directory-submission.md`](https://github.com/better-isms/founder-ops)
-(founder-ops repo, internal).
+Releases use merge-commit PRs to `main`. Raise `version` in the manifests with every release.
 
 ## License
 

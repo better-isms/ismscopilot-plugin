@@ -1,5 +1,16 @@
 # Changelog
 
+## Claude Code 0.1.7 (2026-10-19)
+
+- README is now the public listing text (the Claude Code plugin directory
+  shows it as the description): the approved Claude connector listing
+  text, what the plugin contains and sends, install for Claude Code,
+  Gemini CLI and other clients, maintainer notes.
+- .claude-plugin/plugin.json: version 0.1.7, description matches the
+  Claude directory listing, homepage carries ref=claude-code-plugins. Its
+  extensions.com.openai block is unchanged. The ChatGPT and Codex package
+  (root plugin.json, mcp.json) stays at 0.1.6.
+
 ## Gemini CLI 0.1.0 and Claude Code install (2026-10-14)
 
 - New files only; the OpenAI package files (plugin.json,
