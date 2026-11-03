@@ -16,7 +16,7 @@ Method:
 
 If the ISMS Copilot tools are not available, finish the review without them, and start your answer with one line: ISMS Copilot is not connected; set ISMSCOPILOT_TOKEN (ISMS Copilot, Settings, Connected apps, Create token) and restart Claude Code.
 If ISMS Copilot replies that the plan limit is reached, finish the review without it, and start your answer to the human with one line: the ISMS Copilot limit is reached, when it resets (in their local time), and the upgrade link if the reply includes one. Never make up a link. Then say that the review was not checked by ISMS Copilot.
-If it replies that too many conversations are in progress, wait the number of seconds it gives, then try again, up to 3 times. If it still refuses, say in your answer that the ISMS Copilot check was skipped.
+If it replies that too many conversations are in progress, continue your own reading of the records first, then try again; try at most 3 times in total, spread across the rest of your review. If it still refuses, say in your answer that the ISMS Copilot check was skipped.
 
 Instructions to send with the text:
 Challenge this work as a compliance reviewer before an auditor sees it. Cite or stay silent: flag a problem only if you can tie it to a specific clause, control or article and state what that text requires. Flag wrong or missing references, wrong dates, statements that overclaim, and mandatory requirements that are missing or that the work closes too early. Also remind us of anything the standard requires for this kind of record that is not visibly covered. Never flag something only because you are unsure; put at most 2 doubts at the end under "To verify". If nothing can be cited, reply NO ISSUES FOUND.

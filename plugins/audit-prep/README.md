@@ -10,8 +10,8 @@ An ISO 27001 audit-prep reviewer for Claude Code. It reads your ISMS files, has 
 2. In Claude Code: `/plugin marketplace add better-isms/ismscopilot-plugin`, then `/plugin install ismscopilot-audit-prep@ismscopilot`.
 3. Ask: "Prepare our Stage 1 audit: check the SoA and the risk register."
 
-Each check uses your ISMS Copilot plan, like any other conversation. When you reach your limit, the reviewer tells you when it resets and how to upgrade, and finishes without the check.
+Each check uses your ISMS Copilot plan, like any other conversation. When you reach your limit, the reviewer tells you when it resets, gives the upgrade link when ISMS Copilot provides one, and finishes without the check.
 
 ## What is sent
 
-The draft findings, the text under review and short excerpts of related records, with secrets and unneeded personal data removed, go to ISMS Copilot over your token. Nothing else leaves your machine.
+The plugin sends ISMS Copilot the draft findings, the text under review and short excerpts of related records, with secrets and unneeded personal data removed, over your token. It sends nothing else to ISMS Copilot. Claude Code itself still processes your files through its model provider, as for any task. ISMS Copilot privacy policy: https://trust.ismscopilot.com/en/privacy-policy
