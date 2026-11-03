@@ -14,4 +14,4 @@ Each check uses your ISMS Copilot plan, like any other conversation. When you re
 
 ## What is sent
 
-The plugin sends ISMS Copilot the draft findings, the text under review and short excerpts of related records, with secrets and unneeded personal data removed, over your token. It sends nothing else to ISMS Copilot. Claude Code itself still processes your files through its model provider, as for any task. ISMS Copilot privacy policy: https://trust.ismscopilot.com/en/privacy-policy
+Over your token, the plugin sends ISMS Copilot its draft findings, the text under review, short excerpts of related records, the review instructions and its follow-up questions, with secrets and unneeded personal data removed. It sends no other files. Claude Code itself still processes your files through its model provider, as for any task. ISMS Copilot privacy policy: https://trust.ismscopilot.com/en/privacy-policy
