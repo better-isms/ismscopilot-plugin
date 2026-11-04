@@ -10,7 +10,10 @@
             "type": "oauth",
             "client": {
               "mode": "dcr"
-            }
+            },
+            "authorizationUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/authorize",
+            "tokenUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/token",
+            "registrationUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/clients/register"
           }
         }
       }
