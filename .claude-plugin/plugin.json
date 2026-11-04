@@ -1,7 +1,7 @@
 {
   "name": "ismscopilot",
   "displayName": "ISMS Copilot",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "The compliance specialist your AI calls. Ask ISMS Copilot framework questions and work with your compliance workspaces, documents, memories, company profile and client companies from Claude.",
   "author": {
     "name": "Better ISMS",
