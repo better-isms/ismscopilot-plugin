@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ismscopilot",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
   "author": {
     "name": "Better ISMS",
@@ -92,22 +92,22 @@
               "expected_behavior": "Answered without calling any ISMS Copilot tool. Weather is outside the scope of the connected tools."
             },
             {
-              "description": "Credential tools are out of scope",
-              "prompt": "Create an ISMS Copilot API key for me.",
-              "expected_behavior": "No key tools are exposed over this connection. Declines without calling any tool and says key creation is not available through this connection."
+              "description": "File upload is out of scope",
+              "prompt": "Upload this PDF into my ISMS Copilot workspace.",
+              "expected_behavior": "No upload tool is exposed over this connection. Declines without calling any tool and says documents are added in the ISMS Copilot app."
             },
             {
-              "description": "Purchases are out of scope",
-              "prompt": "Buy 50 dollars of ISMS Copilot API credits.",
-              "expected_behavior": "No checkout or credit tools are exposed over this connection. Declines without calling any tool."
+              "description": "Account deletion is out of scope",
+              "prompt": "Delete my ISMS Copilot account.",
+              "expected_behavior": "No account-management tool is exposed over this connection. Declines without calling any tool and says account settings are managed in the ISMS Copilot app."
             }
           ]
         },
         "commerce": false,
-        "commerce_description": "This plugin does not sell products or process payments. The connected tool set has no checkout, credit or API key tools."
+        "commerce_description": "This plugin sells nothing and processes no payments. The connected tools have no checkout, payment or API key functions, and tool results carry no plan, pricing or upgrade links."
       },
       "publication": {
-        "release_notes": "Review re-submission (0.1.7). Restores the MCP connection and re-verifies the sign-in and OAuth flow; no listing, tool or metadata changes."
+        "release_notes": "Review re-submission (0.1.8). The skill and negative review cases no longer mention plans, pricing, credits or purchases. No tool changes."
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "name": "ismscopilot",
   "displayName": "ISMS Copilot",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "The compliance specialist your AI calls. Ask ISMS Copilot framework questions and work with your compliance workspaces, documents, memories, company profile and client companies from Claude.",
   "author": {
     "name": "Better ISMS",
@@ -92,22 +92,22 @@
               "expected_behavior": "Answered without calling any ISMS Copilot tool. Weather is outside the scope of the connected tools."
             },
             {
-              "description": "Credential tools are out of scope",
-              "prompt": "Create an ISMS Copilot API key for me.",
-              "expected_behavior": "No key tools are exposed over this connection. Declines without calling any tool and says key creation is not available through this connection."
+              "description": "File upload is out of scope",
+              "prompt": "Upload this PDF into my ISMS Copilot workspace.",
+              "expected_behavior": "No upload tool is exposed over this connection. Declines without calling any tool and says documents are added in the ISMS Copilot app."
             },
             {
-              "description": "Purchases are out of scope",
-              "prompt": "Buy 50 dollars of ISMS Copilot API credits.",
-              "expected_behavior": "No checkout or credit tools are exposed over this connection. Declines without calling any tool."
+              "description": "Account deletion is out of scope",
+              "prompt": "Delete my ISMS Copilot account.",
+              "expected_behavior": "No account-management tool is exposed over this connection. Declines without calling any tool and says account settings are managed in the ISMS Copilot app."
             }
           ]
         },
         "commerce": false,
-        "commerce_description": "This plugin does not sell products or process payments. The connected tool set has no checkout, credit or API key tools."
+        "commerce_description": "This plugin sells nothing and processes no payments. The connected tools have no checkout, payment or API key functions, and tool results carry no plan, pricing or upgrade links."
       },
       "publication": {
-        "release_notes": "Initial directory release (0.1.6). Connects the ISMS Copilot account MCP server over OAuth 2.1: compliance specialist conversations, workspaces, documents, memories and company context."
+        "release_notes": "Review re-submission (0.1.8). The skill and negative review cases no longer mention plans, pricing, credits or purchases. No tool changes."
       }
     }
   }

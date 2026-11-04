@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.8 (2026-11-04)
+
+- Review re-submission after the 2026-11-04 rejection ("appears to enable
+  or facilitate commerce for disallowed offerings"). The skill no longer
+  links the pricing page or mentions credits or purchases: a feature that
+  is not on the user's plan is stated plainly, with no prices, plan names
+  or upgrade links. The two commerce-shaped negative review cases (API key,
+  API credits) are replaced by out-of-scope cases (file upload, account
+  deletion). release notes trimmed to the facts; commerce_description says what the tools carry (no checkout,
+  payment or API key functions, no plan or upgrade links in results).
+- Versions mirrored in the Claude and Cursor manifests. No tool, schema or
+  listing-metadata change; the OpenAI package description is unchanged.
+
 ## Claude Code 0.1.7 (2026-10-19)
 
 - README is now the public listing text (the Claude Code plugin directory
