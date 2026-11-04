@@ -3,7 +3,17 @@
   "mcpServers": {
     "ismscopilot-account": {
       "type": "streamable-http",
-      "url": "https://account.ismscopilot.com/v1/account/mcp"
+      "url": "https://account.ismscopilot.com/v1/account/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            }
+          }
+        }
+      }
     }
   }
 }

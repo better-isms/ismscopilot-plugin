@@ -10,6 +10,9 @@
   API credits) are replaced by out-of-scope cases (file upload, account
   deletion). release notes trimmed to the facts; commerce_description says what the tools carry (no checkout,
   payment or API key functions, no plan or upgrade links in results).
+- mcp.json declares the server's authentication for the OpenAI portal
+  (extensions.com.openai.auth: type oauth, client mode dcr; endpoints come
+  from discovery). The portal's upload check now requires it.
 - Versions mirrored in the Claude and Cursor manifests. No tool, schema or
   listing-metadata change; the OpenAI package description is unchanged.
 
