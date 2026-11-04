@@ -42,9 +42,10 @@ profile with set_company_context only when the user asks to update it
 
 Code, files, git and credentials stay on the user's machine. Never ask
 the user to paste API keys, passwords or secrets into the chat, and never
-try to: this connection has no API key or payment tools. If the user asks
+try to: this connection (OAuth sign-in) has no API key or payment tools. If the user asks
 for them, say they are not part of this connection; account settings
 live in the ISMS Copilot app.
+
 ## Sensitive data and advice
 
 Do not send health records, payment card data, government ID numbers,

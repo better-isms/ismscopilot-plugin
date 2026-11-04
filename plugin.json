@@ -107,7 +107,7 @@
         "commerce_description": "This plugin sells nothing and processes no payments. The connected tools have no checkout, payment or API key functions, and tool results carry no plan, pricing or upgrade links."
       },
       "publication": {
-        "release_notes": "Review re-submission (0.1.8). The skill and review cases no longer mention plans, pricing, credits or purchases; the developer identity is documented for the review. No tool or metadata changes."
+        "release_notes": "Review re-submission (0.1.8). The skill and negative review cases no longer mention plans, pricing, credits or purchases. No tool changes."
       }
     }
   }
