@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "ismscopilot",
+  "name": "isms-copilot",
   "version": "0.1.8",
   "description": "Account MCP connection that lets a compliance specialist take over GRC work: framework interpretation, policy drafting, control mapping, gap analysis, risk registers and audit prep, with workspaces, documents, memories and company context in one place.",
   "author": {
