@@ -7,8 +7,9 @@
   links the pricing page or mentions credits or purchases: a feature that
   is not on the user's plan is stated plainly, with no prices, plan names
   or upgrade links. The two commerce-shaped negative review cases (API key,
-  API credits) are replaced by out-of-scope cases (file upload, account
-  deletion). release notes trimmed to the facts; commerce_description says what the tools carry (no checkout,
+  API credits) are replaced by out-of-scope cases (password change, account
+  deletion). A file-upload case was dropped: run in ChatGPT, the model
+  offered an upload that no tool provides. release notes trimmed to the facts; commerce_description says what the tools carry (no checkout,
   payment or API key functions, no plan or upgrade links in results).
 - mcp.json declares only auth type oauth; client and endpoints come from
   discovery, which restores the default OIDC scopes (openid, email,
