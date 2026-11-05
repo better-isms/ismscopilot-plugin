@@ -10,12 +10,12 @@
   API credits) are replaced by out-of-scope cases (file upload, account
   deletion). release notes trimmed to the facts; commerce_description says what the tools carry (no checkout,
   payment or API key functions, no plan or upgrade links in results).
-- mcp.json declares the server's authentication for the OpenAI portal
-  (extensions.com.openai.auth: type oauth, client mode dcr, plus the
-  authorize, token and registration endpoints the portal's upload check
-  demands explicitly; they are the values our discovery metadata serves),
-  plus baseScopes (openid, email, offline_access) and resource: with the
-  endpoints declared the portal otherwise requests only the email scope.
+- mcp.json declares only auth type oauth; client and endpoints come from
+  discovery, which restores the default OIDC scopes (openid, email,
+  offline_access). Declaring endpoints had reduced the request to email.
+- plugin.json name is isms-copilot: a new OpenAI plugin under the verified
+  business identity, because a plugin's first connection keeps its OAuth
+  client for good.
 - Versions mirrored in the Claude and Cursor manifests. No tool or
   listing-metadata change; mcp.json gains the auth declaration only; the
   OpenAI package description is unchanged.
