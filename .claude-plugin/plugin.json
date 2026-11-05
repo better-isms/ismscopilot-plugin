@@ -107,7 +107,7 @@
         "commerce_description": "This plugin sells nothing and processes no payments. The connected tools have no checkout, payment or API key functions, and tool results carry no plan, pricing or upgrade links."
       },
       "publication": {
-        "release_notes": "New plugin under the verified business identity. The skill and negative review cases no longer mention plans, pricing, credits or purchases. All review cases were run in ChatGPT on the reviewer account."
+        "release_notes": "New plugin under the verified business identity. All review cases were run in ChatGPT on the reviewer account."
       }
     }
   }
