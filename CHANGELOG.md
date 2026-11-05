@@ -13,7 +13,9 @@
 - mcp.json declares the server's authentication for the OpenAI portal
   (extensions.com.openai.auth: type oauth, client mode dcr, plus the
   authorize, token and registration endpoints the portal's upload check
-  demands explicitly; they are the values our discovery metadata serves).
+  demands explicitly; they are the values our discovery metadata serves),
+  plus baseScopes (openid, email, offline_access) and resource: with the
+  endpoints declared the portal otherwise requests only the email scope.
 - Versions mirrored in the Claude and Cursor manifests. No tool or
   listing-metadata change; mcp.json gains the auth declaration only; the
   OpenAI package description is unchanged.

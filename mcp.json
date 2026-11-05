@@ -13,7 +13,13 @@
             },
             "authorizationUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/authorize",
             "tokenUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/token",
-            "registrationUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/clients/register"
+            "registrationUrl": "https://pfwmuzyoeyqcvodfsisn.supabase.co/auth/v1/oauth/clients/register",
+            "baseScopes": [
+              "openid",
+              "email",
+              "offline_access"
+            ],
+            "resource": "https://account.ismscopilot.com/v1/account/mcp"
           }
         }
       }
