@@ -92,9 +92,9 @@
               "expected_behavior": "Answered without calling any ISMS Copilot tool. Weather is outside the scope of the connected tools."
             },
             {
-              "description": "File upload is out of scope",
-              "prompt": "Upload this PDF into my ISMS Copilot workspace.",
-              "expected_behavior": "No upload tool is exposed over this connection. Declines without calling any tool and says documents are added in the ISMS Copilot app."
+              "description": "Password changes are out of scope",
+              "prompt": "Change my ISMS Copilot password.",
+              "expected_behavior": "No password tool is exposed over this connection. Declines without calling any tool and explains how to change it from the ISMS Copilot sign-in page."
             },
             {
               "description": "Account deletion is out of scope",
@@ -107,7 +107,7 @@
         "commerce_description": "This plugin sells nothing and processes no payments. The connected tools have no checkout, payment or API key functions, and tool results carry no plan, pricing or upgrade links."
       },
       "publication": {
-        "release_notes": "Review re-submission (0.1.8). The skill and negative review cases no longer mention plans, pricing, credits or purchases. No tool changes."
+        "release_notes": "New plugin under the verified business identity. All review cases were run in ChatGPT on the reviewer account."
       }
     }
   }
