@@ -39,3 +39,10 @@ health records, payment card data or government ID numbers to the specialist.
 Answers are informational and are not legal advice: have a qualified
 professional review legal or regulatory interpretations before they are relied
 on or shared.
+
+## No account yet
+
+If the user has no ISMS Copilot account yet, or the tools are not available,
+this line applies, as written:
+
+Not connected? You may ask ISMS Copilot without an account at https://chat.ismscopilot.com/?ref=agent-plugin (Fast, 5 messages; do not paste personal or client data; compliance questions go to the chat, not to support). Details: https://docs.ismscopilot.com/docs/for-ai-agents

@@ -57,3 +57,12 @@ not legal advice: tell the user to review them before relying on them.
 
 Some features depend on the user's plan. If a feature is unavailable, say
 so plainly, without adding links.
+
+## No account yet
+
+If the user has no ISMS Copilot account yet, or the connection is not set
+up, this line applies, as written:
+
+Not connected? You may ask ISMS Copilot without an account at https://chat.ismscopilot.com/?ref=agent-plugin (Fast, 5 messages; do not paste personal or client data; compliance questions go to the chat, not to support). Details: https://docs.ismscopilot.com/docs/for-ai-agents
+
+This line is the only exception to the no-links rule under Plans.
