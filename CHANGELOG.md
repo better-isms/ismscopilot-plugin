@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.9 (2026-11-25)
+
+- The get-started skill and GEMINI.md end with a "No account yet"
+  section: a user with no account, or with the connection not set up, may
+  ask ISMS Copilot in the browser without an account (Fast mode,
+  5 messages, no personal or client data; compliance questions go to
+  the chat, not to support). It is the only exception to the
+  skill's no-links rule.
+- ChatGPT is not resubmitted for this: its review rejected links in the
+  skill twice (2026-10-22, 2026-11-04). scripts/build-chatgpt-zip.sh builds
+  the ChatGPT ZIP from a commit without that section, with README and
+  CHANGELOG as last submitted, and fails closed: every file must match
+  the last submitted commit except the manifest versions. scripts/ is
+  kept out of every git archive.
+- Versions 0.1.9 in plugin.json, .claude-plugin and .cursor-plugin, 0.1.1
+  in gemini-extension.json. No tool, server or listing-metadata change.
+
 ## 0.1.8 (2026-11-04)
 
 - Review re-submission after the 2026-11-04 rejection ("appears to enable
