@@ -10,9 +10,10 @@
   skill's no-links rule.
 - ChatGPT is not resubmitted for this: its review rejected links in the
   skill twice (2026-10-22, 2026-11-04). scripts/build-chatgpt-zip.sh builds
-  the ChatGPT ZIP from a commit without that section and fails if the
-  no-account chat link is still in the package; scripts/ is kept out of
-  every git archive.
+  the ChatGPT ZIP from a commit without that section, with README and
+  CHANGELOG as last submitted, and fails closed: every file must match
+  the last submitted commit except the manifest versions. scripts/ is
+  kept out of every git archive.
 - Versions 0.1.9 in plugin.json, .claude-plugin and .cursor-plugin, 0.1.1
   in gemini-extension.json. No tool, server or listing-metadata change.
 

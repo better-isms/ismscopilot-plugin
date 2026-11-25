@@ -64,7 +64,7 @@ Setup guide: https://docs.ismscopilot.com/docs/agents/connect-any-mcp-client
 - `plugin.json` and `mcp.json`: Agent Plugins manifest and server entry for the ChatGPT and Codex plugins directory.
 - `skills/get-started/SKILL.md`: onboarding skill.
 - `assets/logo.png`: listing icon.
-- `scripts/build-chatgpt-zip.sh`: builds the ChatGPT ZIP from a commit without the "No account yet" section, which ChatGPT does not get (its review rejected links in the skill). Build every ChatGPT ZIP with it, never with a bare `git archive`.
+- `scripts/build-chatgpt-zip.sh`: builds the ChatGPT ZIP from a commit without the "No account yet" section, which ChatGPT does not get (its review rejected links in the skill), and refuses to build unless the package matches the last submitted commit except manifest versions. Build every ChatGPT ZIP with it, never with a bare `git archive`.
 
 Releases use merge-commit PRs to `main`. Raise `version` in the manifests with every release.
 
